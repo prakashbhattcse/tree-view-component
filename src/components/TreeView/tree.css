@@ -1,0 +1,259 @@
+/* ================================
+   Tree Container
+================================ */
+.tree-container {
+  font-family: Inter, system-ui, sans-serif;
+  background: #f6f6f6;
+  padding: 20px;
+  width: 680px;
+}
+
+.drag-handle {
+  cursor: grab;
+  color: #9ca3af;
+  font-size: 14px;
+  user-select: none;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+}
+
+
+
+/* ================================
+   Hero Header (Landing Style)
+================================ */
+.tree-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tree-hero {
+  background: #ffffff;
+  padding: 33px 24px 48px;
+}
+
+.tree-hero-content {
+  max-width: 620px;
+}
+
+/* Title */
+.tree-hero-title {
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+/* Subtitle */
+.tree-hero-subtitle {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+/* Actions */
+.tree-hero-actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.hero-btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+}
+
+.hero-btn.primary {
+  background: #111827;
+  color: #ffffff;
+}
+
+.hero-btn.primary:hover {
+  background: #000000;
+}
+
+.hero-btn.secondary {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.hero-btn.secondary:hover {
+  background: #e5e7eb;
+}
+
+
+/* ================================
+   Tree Node Wrapper
+================================ */
+.tree-node {
+  margin-bottom: 6px;
+}
+
+/* ================================
+   Node Row (Card)
+================================ */
+.node-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.node-row:hover {
+  border-color: #d1d5db;
+}
+
+/* ================================
+   Expand / Collapse (+ / −)
+================================ */
+.toggle {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #374151;
+}
+
+.toggle.placeholder {
+  visibility: hidden;
+}
+
+/* ================================
+   Node Icon
+================================ */
+.node-icon {
+  width: 18px;
+  display: grid;
+  place-items: center;
+  color: #6b7280;
+}
+
+/* ================================
+   Node Name
+================================ */
+.node-name {
+  flex: 1;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ================================
+   Count Badge
+================================ */
+.node-badge {
+  background: #4caf50;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  min-width: 26px;
+  text-align: center;
+}
+
+/* ================================
+   Inline Input (Edit / Add)
+================================ */
+.node-input {
+  flex: 1;
+  font-size: 13px;
+  padding: 4px 6px;
+}
+
+/* ================================
+   Children Wrapper
+================================ */
+.children {
+  margin-left: 26px;
+  margin-top: 6px;
+  padding-left: 10px;
+  border-left: 1px dashed #d1d5db;
+}
+
+/* ================================
+   Loading Indicator
+================================ */
+.loading {
+  margin-left: 32px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+
+/* ================================
+   Add New Node Card
+================================ */
+.add-node-card {
+  margin-left: 32px;
+  margin-top: 6px;
+  display: flex;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+  align-items: center;
+}
+
+/* Input */
+.add-node-input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+}
+
+.add-node-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+/* Primary button */
+.add-node-btn {
+  background: #6366f1;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.add-node-btn:hover {
+  background: #4f46e5;
+}
+
+/* Cancel button */
+.add-node-cancel {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+
